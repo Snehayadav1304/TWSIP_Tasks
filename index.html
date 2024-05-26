@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ONLINE VOTING MACHINE</h1>
+        <div class="inputname">
+            Enter Name:
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            Enter Phone:
+            <input type="number" id="phoneInput" placeholder="Enter your number">
+        </div>
+        <h2>Cast Your Vote Here:</h2>
+        <div class="radio" id="vote">
+            <label>
+                <input type="radio" name="party" value="A"> Party A
+            </label>
+            <label>
+                <input type="radio" name="party" value="B"> Party B
+            </label>
+            <label>
+                <input type="radio" name="party" value="C"> Party C
+            </label>
+        </div>
+        <div class="buttons">
+            <button id="submitVote">Submit Vote</button>
+            <button id="checkResult">Check Result</button>
+        </div>
+        <div id="resultBox" class="result-box">
+            <button id="closeResult">&times;</button>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

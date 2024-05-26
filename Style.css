@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+#result {
+    font-size: 18px;
+    color: #333;
+}
+
+.inputname {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputname label {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.inputname input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 140px);
+    display: inline-block;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.radio label {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.radio input[type="radio"] {
+    margin-right: 5px;
+}
+
+.radio input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.result-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.result-box p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+#closeResult {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+}
